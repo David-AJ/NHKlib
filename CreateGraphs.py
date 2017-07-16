@@ -20,7 +20,7 @@ def createGraphs(matrix, window):
         if i + window <= num:
             temp = matrix[i:i+window,:]
             # 以列向量为变量，计算各个变量间的协方差矩阵cov
-            cov = ds.cdist(temp.T,temp.T,'euclidean')
+            cov = np.cov(np.array(temp).T)
             cov[range(len(cov)), range(len(cov))] = 0
             sortcov = np.array(cov).reshape((cov.size, 1))
             sortcov.sort(0)
