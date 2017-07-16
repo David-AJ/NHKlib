@@ -8,9 +8,9 @@ int main(int num,char** arg)
 	for(int i=0;i<6194;i++)
 		for(int j=0;j<2848;j++)
 			scanf("%d",&a[i][j]);
-	for(int i=0;i<10;i++)
+	for(int i=0;i<6194;i++)
 	{
-		for(int j=i+1;j<10;j++)
+		for(int j=i+1;j<6194;j++)
 		{
 		    int x=0,y=0;
 		    float c=0.0;
